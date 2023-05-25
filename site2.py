@@ -10,7 +10,10 @@ def extraire_pages (url) :
   for s in range (1,11) :
    Url_page = f'https://www.scrapethissite.com/pages/forms/?page={s}'
 
+
    print (Url_page)
+  else :
+   print('echec', url)
 
 extraire_pages(url)
 response = r.get(url)
